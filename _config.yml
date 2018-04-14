@@ -1,21 +1,19 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               Luiz Assunção
+tagline:             'A blog about software development'
+description:         'Made by <a href="https://twitter.com/LuizHAssuncao" target="_blank">@LuizHAssuncao</a>.'
+url:                 https://www.luiz.tech
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Luiz Assunção
+  url:               https://twitter.com/LuizHAssuncao
+  email:             luizhenrique.assuncao@gmail.com
 
 # Custom vars
 version:             1.0.0
