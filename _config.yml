@@ -23,6 +23,9 @@ plugins: [jekyll-paginate]
 
 ## My Variables
 
+# Personal Information
+email:                luizhenrique.assuncao@gmail.com
+
 # Social Nicknames
 linkedin_username:    LuizHAssuncao
 twitter_username:     luizhassuncao
