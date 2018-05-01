@@ -3,28 +3,14 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! I am Luiz Assunção. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I have over 7 years of experience developing software and I have worked at both startups and large organizations. While I’m on my way to becoming a proficient full-stack developer, my expertise is in building backend services, from API design until writing SQL queries.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I love the process to build and maintain valuable software. Although hard engineering problems are often fun to solve, I’m more attracted to solving real customer problems with a business justification.
 
-There are currently two themes built on Poole:
+I’m driven by working with collaborative teams and creating context about the business.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+In my spare time, I like to run and collect some data about myself, then I can
+improve my running based on facts.  
+You can follow me on my <a href="https://www.strava.com/athletes/luizhassuncao" target="_blank">Strava
+Profile</a>!
+ 
