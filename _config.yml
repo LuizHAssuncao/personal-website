@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Luiz Assunção
 tagline:             'A blog about software development'
-description:         'Made by <a href="https://twitter.com/LuizHAssuncao" target="_blank">@LuizHAssuncao</a>.'
+description:         'Made by <a href="https://twitter.com/LuizHAssuncao" target="_blank">Luiz Assunção</a>'
 url:                 https://www.luiz.tech
 baseurl:             ''
 paginate:            5
