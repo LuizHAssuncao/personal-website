@@ -20,3 +20,12 @@ version:             1.0.0
 
 # Plugins
 plugins: [jekyll-paginate]
+
+## My Variables
+
+# Social Nicknames
+linkedin_username:    LuizHAssuncao
+twitter_username:     luizhassuncao
+github_username:      luizhassuncao
+goodreads_username:   LuizHAssuncao
+facebook_username:    LuizHAssuncao
