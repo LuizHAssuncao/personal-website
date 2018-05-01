@@ -15,6 +15,11 @@ Profile</a>!
 
 <ul>
   <li>
+    <a href="mailto:{{ site.email }}">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+  </li>
+  <li>
     <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
       <i class="fab fa-linkedin"></i> Linkedin
     </a>
