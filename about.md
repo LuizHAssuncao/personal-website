@@ -7,7 +7,7 @@ I have over 7 years of experience developing software and I have worked at both 
 
 I love the process to build and maintain valuable software. Although hard engineering problems are often fun to solve, I’m more attracted to solving real customer problems with a business justification.
 
-I’m driven by working with collaborative teams and creating context about the business.
+I’m driven by working with collaborative teams and absorbing context about the business.
 
 In my spare time, I like to run and collect some data about myself, then I can
 improve my running based on facts. You can follow me on my <a href="https://www.strava.com/athletes/luizhassuncao" target="_blank">Strava
