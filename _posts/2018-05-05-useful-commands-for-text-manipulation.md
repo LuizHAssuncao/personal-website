@@ -24,14 +24,13 @@ tasks. Let's take a look.
 * [cat](#cat) (concatenate files and print on the standard output)
 * [grep](#grep) (file pattern searcher)
 * [cut](#cut) (cut out selected portions of each line of a file)
-* awk (pattern-directed scanning and processing language)
-* sed (stream editor)
-* sort (sort or merge records (lines) of text files)
-* uniq (report or filter out repeated lines in a file)
+* [sed](#sed) (stream editor)
+* [awk](#awk) (pattern-directed scanning and processing language)
 * fmt (simple text formatter)
 * tr (translate characters)
 * nl (line numbering filter)
 * wc (word, line, character, and byte count)
+* [sort](#sort) (sort or merge records (lines) of text files)
 
 ## cat
 > concatenate files and print on the standard output
@@ -70,7 +69,7 @@ $ cat people # Display file
 ```
 
 ## grep
-_grep_ is an awesome command, because it allows you to search for lines
+_grep_ is a command that it allows you to search for lines
 containing a match to a string. _grep_ is often used with shell pipes,
 that it is a way to connect the output of one program to the input of another
 program.
@@ -107,5 +106,51 @@ John
 $ grep 'Peter' cut_sample | cut -d';' -f2,3
 Peter;32
 ```
+## sort
+_sort_ command is obvious: it sorts the lines of a file.
 
-awk, sed, grep, sort, uniq, cat, cut, fmt, tr, nl, egrep, fgrep, wc
+```bash
+$ sort -r people
+Id;Name;Age
+4;Rose;20
+3;Mary;27
+2;Peter;32
+1;Luiz;24
+```
+
+## sed
+_sed_ is a stream editor, that is, the program can receive a input text and
+iterates in lines doing specified operations. You can add, delete or replace
+text. To use all the power of _sed_, it would be nice to know regular expressions.
+
+```bash
+$ sed 's/Luiz/Harry/g' people > new_people
+# 1 - s  - substitute operation
+# 2 - Luiz - search term
+# 3 - Harry - term to be written
+# 4 - g - replace all the ocurrences
+```
+
+```bash
+# replace 'e' to 'a' only in the first and second lines
+$ sed '1,2 s/e/a/g' people > new_people
+```
+
+## awk
+_awk_ is a text processor. It is a programming language by itself designed for
+text processing. You can use _awk_ to extract data or as a reporting tool. It is
+possible to use _if/else_, _while_, _for_ and even declare variables.
+If you want to counting fields, calculate totals or reorganize structure, _awk_
+will be your best friend (ok, it has a steep learning curve...).
+
+```bash
+# print the second column (simulating _cut_ command)
+$ awk -F';' '{print $2;}' people
+```
+
+```bash
+# print the average age
+# explanation: sum of the third column divided by the number of lines,
+# excluding the first line
+$ awk -F';' '{sum+=$3} END { print "Average age = ",sum/(NR-1)}' people
+```
