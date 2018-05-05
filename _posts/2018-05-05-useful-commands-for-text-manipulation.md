@@ -143,7 +143,7 @@ $ sed 's/Luiz/Harry/g' people > new_people
 
 $ cat new_people
 Id;Name;Age
-1;Harry;24  # Luiz replaced to Harry
+1;Harry;24  # Luiz was replaced to Harry
 2;Peter;32
 3;Mary;27
 4;Rose;20
