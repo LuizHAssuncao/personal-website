@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Useful commands for text manipulation
-draft: true
 ---
 
 Long story short: I have used Windows for a long time in my career, since I was primarily using
