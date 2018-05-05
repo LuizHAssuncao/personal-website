@@ -6,7 +6,7 @@ title: Useful commands for text manipulation
 Long story short: I have used Windows for a long time in my career, since I was primarily using
 Microsoft technologies. And it was a nice period with beautiful windows helping
 me to complete my tasks. Until I try a *nix environment full-time and I figured
-out the powerful terminal.
+out the power of the terminal.
 
 Yes, I know. Windows has the Command Prompt, but it is not the same thing.
 Windows was created to democratize the access of a personal computer in the easiest
