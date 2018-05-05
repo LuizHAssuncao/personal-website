@@ -32,3 +32,6 @@ twitter_username:     luizhassuncao
 github_username:      luizhassuncao
 goodreads_username:   LuizHAssuncao
 facebook_username:    LuizHAssuncao
+
+# Excerpt configuration
+excerpt_separator: <!--more-->
