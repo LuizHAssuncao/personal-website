@@ -24,13 +24,10 @@ tasks. Let's take a look.
 * [cat](#cat) (concatenate files and print on the standard output)
 * [grep](#grep) (file pattern searcher)
 * [cut](#cut) (cut out selected portions of each line of a file)
+* [sort](#sort) (sort or merge records (lines) of text files)
+* [wc](#wc) (word, line, character, and byte count)
 * [sed](#sed) (stream editor)
 * [awk](#awk) (pattern-directed scanning and processing language)
-* fmt (simple text formatter)
-* tr (translate characters)
-* nl (line numbering filter)
-* wc (word, line, character, and byte count)
-* [sort](#sort) (sort or merge records (lines) of text files)
 
 ## cat
 > concatenate files and print on the standard output
@@ -110,12 +107,27 @@ Peter;32
 _sort_ command is obvious: it sorts the lines of a file.
 
 ```bash
+# revert sort
 $ sort -r people
 Id;Name;Age
 4;Rose;20
 3;Mary;27
 2;Peter;32
 1;Luiz;24
+```
+
+## wc
+_wc_ basically displays some statistics of a file, such as number of lines, number of word (separated by whitespace) and character in specified files.
+
+```bash
+$ wc people
+       5       5      53 people
+# Where the first 5 is the number of lines, the second 5 is the number of words, and 53 is the number of characters.
+```
+
+```bash
+# print the number of files in a folder
+ls | wc -l
 ```
 
 ## sed
