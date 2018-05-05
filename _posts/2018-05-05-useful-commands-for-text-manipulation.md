@@ -14,7 +14,7 @@ Windows was created to democratize the access of a personal computer in the easi
 way. While one of the Unix philosophy is to create programs that do only one thing
 (and do that only one thing very well).
 
-It may seem awkward to use these tools in the beginning, however afterwards you can realize a boost in your productivity.
+It may seem awkward to use these tools in the beginning, however afterward you can realize a boost in your productivity.
 
 In this article, I want to show some useful commands for text manipulation
 tasks. Let's take a look.
