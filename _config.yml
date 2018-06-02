@@ -6,7 +6,7 @@ title:               Luiz Assunção
 tagline:             'About software engineering'
 description:         'Made by <a href="https://twitter.com/LuizHAssuncao" target="_blank">Luiz Assunção</a>'
 url:                 https://www.luiz.tech
-baseurl:             ''
+baseurl:             '/blog'
 paginate:            5
 
 # About/contact
