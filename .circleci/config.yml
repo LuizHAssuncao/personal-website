@@ -23,7 +23,7 @@ jobs:
           command: bundle install
       - save_cache:
           paths:
-            - /usr/local/bundle
+            - ~/bundle/personal_website
           key: dependencies-{{ checksum "Gemfile.lock" }}
       - run:
           name: Build the Jekyll site
