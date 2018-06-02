@@ -31,7 +31,7 @@ jobs:
 
       - run:
           name: Deploy
-          command: rsync -e "ssh -o StrictHostKeyChecking=no" -va --delete ./_site_result lassuncao@167.99.226.237:/var/html
+          command: rsync -e "ssh -o StrictHostKeyChecking=no" -va --delete ./_site_result lassuncao@167.99.226.237:~/deployments/personal-website
 #   deploy:
 #     docker:
 #       - image: circleci/ruby:2.5.1
