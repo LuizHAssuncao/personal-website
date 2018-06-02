@@ -1,9 +1,38 @@
-dependencies:
-  post:
-    - bundle exec jekyll build
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5.1
+    working_directory: ~/_site_personal_website
+    environment:
+      - JEKYLL_ENV=production
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+      - JOB_RESULTS_PATH=run-results
+    steps:
+      - checkout
+      - run:
+          name: Build the Jekyll site
+          command: bundle exec jekyll build --source ~/_site_personal_website --destination ~/_site_result
+  deploy:
+    docker:
+      - image: circleci/ruby:2.5.1
+    working_directory: ~/_site_personal_website
+    steps:
+      - attach_workspace:
+          at: ~/_site_personal_website
+      - run:
+          name: Deploy
+          command: rsync -va --delete ./_site lassuncao@167.99.226.237:/var/html
 
-  deployment:
-    prod:
-      branch: master
-      commands:
-        - rsync -va --delete ./_site lassuncao@167.99.226.237:/var/html
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
