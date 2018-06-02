@@ -12,9 +12,9 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "Gemfile.lock" }}
+            - v2-dependencies-{{ checksum "Gemfile.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - dependencies-
+            - v2-dependencies-
       - run:
           name: Install rsync
           command: sudo apt install rsync
@@ -24,7 +24,7 @@ jobs:
       - save_cache:
           paths:
             - ~/bundle/personal_website
-          key: dependencies-{{ checksum "Gemfile.lock" }}
+          key: v2-dependencies-{{ checksum "Gemfile.lock" }}
       - run:
           name: Build the Jekyll site
           command: bundle exec jekyll build --source ~/_site_personal_website --destination ~/_site_result --verbose
