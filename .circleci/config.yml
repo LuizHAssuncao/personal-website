@@ -10,24 +10,24 @@ jobs:
       - JOB_RESULTS_PATH=run-results
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v3-dependencies-{{ checksum "Gemfile.lock" }}
-            # fallback to using the latest cache if no exact match is found
-            - v3-dependencies-
+      # - restore_cache:
+      #     keys:
+      #       - v3-dependencies-{{ checksum "Gemfile.lock" }}
+      #       # fallback to using the latest cache if no exact match is found
+      #       - v3-dependencies-
       - run:
           name: Install rsync
           command: sudo apt install rsync
       - run:
           name: Install dependencies
           command: bundle install
-      - save_cache:
-          paths:
-            - ~/bundle/personal_website
-          key: v3-dependencies-{{ checksum "Gemfile.lock" }}
+      # - save_cache:
+      #     paths:
+      #       - ~/bundle/personal_website
+      #     key: v3-dependencies-{{ checksum "Gemfile.lock" }}
       - run:
           name: Build the Jekyll site
-          command: bundle exec jekyll build --source ~/_site_personal_website --destination ~/_site_result --verbose
+          command: bundle exec jekyll build --source ~/_site_personal_website --destination ~/_site_personal_website/_site_result --verbose
 
       - run:
           name: Deploy
