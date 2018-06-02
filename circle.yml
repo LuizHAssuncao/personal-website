@@ -1,0 +1,9 @@
+dependencies:
+  post:
+    - bundle exec jekyll build
+
+  deployment:
+    prod:
+      branch: master
+      commands:
+        - rsync -va --delete ./_site lassuncao@167.99.226.237:/var/html
