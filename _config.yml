@@ -13,7 +13,7 @@ paginate:            5
 author:
   name:              Luiz Assunção
   url:               https://twitter.com/LuizHAssuncao
-  email:             luizhenrique.assuncao@gmail.com
+  email:             me@luiz.tech
 
 # Custom vars
 version:             1.0.0
@@ -24,14 +24,12 @@ plugins: [jekyll-paginate]
 ## My Variables
 
 # Personal Information
-email:                luizhenrique.assuncao@gmail.com
+email:                me@luiz.tech
 
 # Social Nicknames
 linkedin_username:    LuizHAssuncao
 twitter_username:     luizhassuncao
 github_username:      luizhassuncao
-goodreads_username:   LuizHAssuncao
-facebook_username:    LuizHAssuncao
 
 # Excerpt configuration
 excerpt_separator: <!--more-->
