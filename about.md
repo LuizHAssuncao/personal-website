@@ -3,11 +3,11 @@ layout: page
 title: About
 ---
 
-I have over 7 years of experience developing software and I have worked at both startups and large organizations. While I’m on my way to becoming a proficient full-stack developer, my expertise is in building backend services, from API design until writing SQL queries.
+I have been working as Software Engineer and I have experience at startups and large organizations. My expertise is building backend services, from designing APIs to writing SQL queries.
 
-I love the process to build and maintain valuable software. Although hard engineering problems are often fun to solve, I’m more attracted to solving real customer problems with a business justification.
+I love the process of building and maintaining valuable software. Even though hard engineering problems are often fun to solve, I'm more attracted to solve real customer problems with a business justification.
 
-I’m driven by working with collaborative teams and absorbing context about the business.
+I'm driven by working with collaborative teams and I'm always interested to absorb context about the business.
 
 <ul>
   <li>
