@@ -13,7 +13,6 @@ paginate:            5
 author:
   name:              Luiz Assunção
   url:               https://twitter.com/LuizHAssuncao
-  email:             me@luiz.tech
 
 # Custom vars
 version:             1.0.0
@@ -22,9 +21,6 @@ version:             1.0.0
 plugins: [jekyll-paginate]
 
 ## My Variables
-
-# Personal Information
-email:                me@luiz.tech
 
 # Social Nicknames
 linkedin_username:    LuizHAssuncao
